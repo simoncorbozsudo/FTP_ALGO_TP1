@@ -11,7 +11,7 @@ int main() {
                                "random_select_k60000000_inOVER4.csv",
                                "random_select_k60000000_inOVER2.csv"};
     for (int i = 0; i < 5; ++i) {
-        TestSuite t = TestSuite(1000,60000000 );
+        TestSuite t = TestSuite(1000,60000000*8 );
         t.start_test_suite(filenames[i],cases[i],25);
     }
     TestSuite a = TestSuite(1000,60000000 );
